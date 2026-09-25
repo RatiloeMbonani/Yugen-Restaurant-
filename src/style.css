@@ -26,3 +26,101 @@ html {
 .btn-primary {
   border-radius: 9999px;
 }
+
+.menu-toggle {
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: var(--color-background);
+}
+
+.menu-toggle span {
+  display: block;
+  width: 1.35rem;
+  height: 1px;
+  background: currentColor;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-inner {
+    height: 4.5rem;
+    padding-inline: 1.25rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0.5rem;
+  }
+
+  .nav-wrap {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    padding: 1rem 1.25rem 1.25rem;
+    background: rgb(13 13 13 / 98%);
+    border-top: 1px solid rgb(255 255 255 / 10%);
+  }
+
+  .site-header.nav-open .nav-wrap {
+    display: block;
+  }
+
+  .nav-list {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-list li,
+  .nav-list a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-list a {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+  }
+
+  .reserve-btn {
+    padding-inline: 0.85rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.14em;
+  }
+
+  .site-header.nav-open .menu-toggle span:nth-child(1) {
+    transform: translateY(0.4rem) rotate(45deg);
+  }
+
+  .site-header.nav-open .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .site-header.nav-open .menu-toggle span:nth-child(3) {
+    transform: translateY(-0.4rem) rotate(-45deg);
+  }
+
+  input,
+  select,
+  textarea {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header .nav-wrap {
+    display: block;
+  }
+}
