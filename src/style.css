@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0D0D0D;
+  --color-background: #F5F1E8;
+  --color-accent: #6E1F2A;
+  --color-muted: #8BB1A5;
+  --color-surface: #252525;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  --tracking-widest2: 0.25em;
+}
+
+/* Your custom styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-title {
+  letter-spacing: 2px;
+}
+
+.btn-primary {
+  border-radius: 9999px;
+}

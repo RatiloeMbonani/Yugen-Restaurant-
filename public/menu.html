@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserve a Table — YŪGEN</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-background text-primary font-sans antialiased">
+
+  <!-- NAV -->
+  <header class="site-header fixed top-0 inset-x-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-white/10">
+    <div class="header-inner max-w-7xl mx-auto flex items-center justify-between px-6 md:px-16 h-[80px]">
+      <a href="index.html" class="font-serif text-2xl tracking-[0.15em] text-background">YŪGEN</a>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-wrap" id="site-nav">
+        <ul class="nav-list flex flex-wrap items-center justify-center gap-3 sm:gap-6 md:gap-10 text-[10px] sm:text-[12px] md:text-[13px] tracking-[0.18em] sm:tracking-[0.25em] uppercase text-background/80">
+          <li><a href="index.html" class="hover:text-background transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-background transition-colors">About</a></li>
+          <li><a href="menu.html" class="text-background border-b border-accent pb-1">Menu</a></li>
+          <li><a href="booking.html" class="hover:text-background transition-colors">Booking</a></li>
+          <li><a href="contact.html" class="hover:text-background transition-colors">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="booking.html"
+         class="reserve-btn inline-block bg-accent hover:bg-accent/90 text-background text-[10px] sm:text-[12px] tracking-[0.2em] sm:tracking-[0.25em] uppercase px-4 sm:px-6 py-2.5 sm:py-3 transition-colors">
+        Reserve
+      </a>
+    </div>
+  </header>
+
+
+ 
+  <!-- MENU INTRO -->
+  <section class="pt-40 pb-16 bg-background">
+    <div class="max-w-3xl mx-auto px-6 md:px-16 text-center">
+      <p class="text-accent text-[13px] tracking-widest2 uppercase mb-4">The Menu</p>
+      <h1 class="font-serif text-5xl md:text-6xl mb-6">Our Menu</h1>
+      <p class="text-[15px] leading-relaxed text-primary/70 font-light max-w-xl mx-auto">
+        A carefully curated selection of premium Japanese dishes, prepared
+        using the finest seasonal ingredients and traditional technique.
+      </p>
+    </div>
+  </section>
+ 
+  <!-- CATEGORY NAV -->
+  <nav class="sticky top-[80px] z-40 bg-background/95 backdrop-blur-sm border-y border-primary/10">
+    <ul class="max-w-5xl mx-auto flex justify-center gap-8 md:gap-12 px-6 py-4 text-[12px] tracking-widest2 uppercase overflow-x-auto">
+      <li><a href="#sushi" class="hover:text-accent transition-colors whitespace-nowrap">Sushi</a></li>
+      <li><a href="#rolls" class="hover:text-accent transition-colors whitespace-nowrap">Signature Rolls</a></li>
+      <li><a href="#sashimi" class="hover:text-accent transition-colors whitespace-nowrap">Sashimi</a></li>
+      <li><a href="#beverages" class="hover:text-accent transition-colors whitespace-nowrap">Beverages</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- SUSHI -->
+  <section id="sushi" class="scroll-mt-[160px] bg-background">
+    <div class="max-w-6xl mx-auto px-6 md:px-16 py-20">
+      <h2 class="font-serif text-3xl md:text-4xl mb-10 text-center">Sushi</h2>
+ 
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-10">
+        <div class="flex gap-5">
+          <img src="images/Salmon Nigiri.jpg" alt="Salmon Nigiri" class="w-24 h-24 object-cover shrink-0">
+          <div class="flex flex-col">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3 class="font-serif text-xl">Salmon Nigiri</h3>
+              <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R120</span>
+            </div>
+            <p class="text-[14px] text-primary/60 font-light leading-relaxed">
+              Fresh Norwegian salmon served over seasoned sushi rice.
+            </p>
+          </div>
+        </div>
+ 
+        <div class="flex gap-5">
+          <img src="images/Tuna Nigiri.jpg" alt="Tuna Nigiri" class="w-24 h-24 object-cover shrink-0">
+          <div class="flex flex-col">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3 class="font-serif text-xl">Tuna Nigiri</h3>
+              <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R150</span>
+            </div>
+            <p class="text-[14px] text-primary/60 font-light leading-relaxed">
+              Premium bluefin tuna paired with perfectly seasoned rice.
+            </p>
+          </div>
+        </div>
+ 
+        <div class="flex gap-5">
+          <img src="images/Ebi Nigiri.jpg" alt="Ebi Nigiri" class="w-24 h-24 object-cover shrink-0">
+          <div class="flex flex-col">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3 class="font-serif text-xl">Ebi Nigiri</h3>
+              <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R200</span>
+            </div>
+            <p class="text-[14px] text-primary/60 font-light leading-relaxed">
+              Poached prawn served with sushi rice and citrus zest.
+            </p>
+          </div>
+        </div>
+ 
+        <div class="flex gap-5">
+          <img src="images/Crispy Katsu.jpg" alt="Crispy Katsu" class="w-24 h-24 object-cover shrink-0">
+          <div class="flex flex-col">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3 class="font-serif text-xl">Crispy Katsu</h3>
+              <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R180</span>
+            </div>
+            <p class="text-[14px] text-primary/60 font-light leading-relaxed">
+              Panko-crusted tempura filling wrapped in seasoned rice, finished with spicy mayo, 
+              sweet eel sauce, crispy shallots, and torched tobiko.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- SIGNATURE ROLLS -->
+  <section id="rolls" class="scroll-mt-[160px] bg-surface text-background">
+    <div class="max-w-6xl mx-auto px-6 md:px-16 py-20">
+      <h2 class="font-serif text-3xl md:text-4xl mb-10 text-center">Signature Rolls</h2>
+ 
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div>
+          <div class="aspect-square overflow-hidden mb-4 bg-primary">
+            <img src="images/YŪGEN Signature Roll.jpg" alt="YŪGEN Signature Roll" class="w-full h-full object-cover">
+          </div>
+          <div class="flex justify-between items-baseline gap-4 mb-1">
+            <h3 class="font-serif text-xl">YŪGEN Signature Roll</h3>
+            <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R250</span>
+          </div>
+          <p class="text-[14px] text-background/60 font-light leading-relaxed">
+            Salmon, avocado, cucumber, tobiko, spicy mayo, and truffle glaze.
+          </p>
+        </div>
+ 
+        <div>
+          <div class="aspect-square overflow-hidden mb-4 bg-primary">
+            <img src="images/Prawn Roll.jpg" alt="Prawn Roll" class="w-full h-full object-cover">
+          </div>
+          <div class="flex justify-between items-baseline gap-4 mb-1">
+            <h3 class="font-serif text-xl">Prawn Roll</h3>
+            <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R300</span>
+          </div>
+          <p class="text-[14px] text-background/60 font-light leading-relaxed">
+            Prawn tempura, avocado, cucumber, eel sauce, and sesame seeds.
+          </p>
+        </div>
+ 
+        <div>
+          <div class="aspect-square overflow-hidden mb-4 bg-primary">
+            <img src="images/Black Truffle Roll.jpg" alt="Black Truffle Roll" class="w-full h-full object-cover">
+          </div>
+          <div class="flex justify-between items-baseline gap-4 mb-1">
+            <h3 class="font-serif text-xl">Black Truffle Roll</h3>
+            <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R450</span>
+          </div>
+          <p class="text-[14px] text-background/60 font-light leading-relaxed">
+            Wagyu, avocado, cucumber, truffle aioli, and crispy shallots.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- SASHIMI -->
+  <section id="sashimi" class="scroll-mt-[160px] bg-background">
+    <div class="max-w-6xl mx-auto px-6 md:px-16 py-20">
+      <h2 class="font-serif text-3xl md:text-4xl mb-10 text-center">Sashimi</h2>
+ 
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-10 max-w-3xl mx-auto">
+        <div class="flex gap-5">
+          <img src="images/Salmon Nigiri.jpg " alt="Salmon Sashimi" class="w-24 h-24 object-cover shrink-0">
+          <div class="flex flex-col">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3 class="font-serif text-xl">Salmon Sashimi</h3>
+              <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R250</span>
+            </div>
+            <p class="text-[14px] text-primary/60 font-light leading-relaxed">
+              Freshly sliced premium salmon.
+            </p>
+          </div>
+        </div>
+ 
+        <div class="flex gap-5">
+          <img src="images/Red Snapper Sashimi.jpg" alt="Red Snapper Sashimi" class="w-24 h-24 object-cover shrink-0">
+          <div class="flex flex-col">
+            <div class="flex justify-between items-baseline gap-4 mb-1">
+              <h3 class="font-serif text-xl">Red Snapper Sashimi</h3>
+              <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R350</span>
+            </div>
+            <p class="text-[14px] text-primary/60 font-light leading-relaxed">
+             Delicate, firm-textured slices of fresh red snapper, served with soy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- BEVERAGES -->
+  <section id="beverages" class="scroll-mt-[160px] bg-surface text-background">
+    <div class="max-w-6xl mx-auto px-6 md:px-16 py-20">
+      <h2 class="font-serif text-3xl md:text-4xl mb-10 text-center">Beverages</h2>
+ 
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-6 max-w-3xl mx-auto">
+        <div class="flex justify-between items-baseline gap-4 border-b border-background/10 pb-4">
+          <div>
+            <h3 class="font-serif text-xl mb-1">Sencha Green Tea</h3>
+            <p class="text-[13px] text-background/50 font-light">Steamed Japanese green tea, served hot or iced.</p>
+          </div>
+          <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R45</span>
+        </div>
+ 
+        <div class="flex justify-between items-baseline gap-4 border-b border-background/10 pb-4">
+          <div>
+            <h3 class="font-serif text-xl mb-1">Junmai Sake</h3>
+            <p class="text-[13px] text-background/50 font-light">Traditional rice wine, served warm or chilled.</p>
+          </div>
+          <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R95</span>
+        </div>
+ 
+        <div class="flex justify-between items-baseline gap-4 border-b border-background/10 pb-4">
+          <div>
+            <h3 class="font-serif text-xl mb-1">Yuzu Sour</h3>
+            <p class="text-[13px] text-background/50 font-light">Shochu, fresh yuzu, and a hint of soda.</p>
+          </div>
+          <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R120</span>
+        </div>
+ 
+        <div class="flex justify-between items-baseline gap-4 border-b border-background/10 pb-4">
+          <div>
+            <h3 class="font-serif text-xl mb-1">Asahi Draft</h3>
+            <p class="text-[13px] text-background/50 font-light">Crisp Japanese lager, on tap.</p>
+          </div>
+          <span class="text-accent text-[14px] tracking-widest2 whitespace-nowrap">R65</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CTA -->
+  <section class="bg-background text-center py-20">
+    <a href="booking.html"
+       class="inline-block bg-accent hover:bg-accent/90 text-background text-[13px] tracking-widest2 uppercase px-10 py-4 transition-colors">
+      Reserve a Table
+    </a>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="bg-primary text-background/50">
+    <div class="max-w-7xl mx-auto px-6 md:px-16 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-[12px] tracking-widest2 uppercase">
+      <p>&copy; 2024 YŪGEN. All rights reserved.</p>
+     
+    </div>
+  </footer>
+ 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const headers = document.querySelectorAll('.site-header');
+
+      headers.forEach(function (header) {
+        const toggle = header.querySelector('.menu-toggle');
+        const nav = header.querySelector('.nav-wrap');
+
+        if (!toggle || !nav) return;
+
+        toggle.addEventListener('click', function () {
+          const isOpen = header.classList.toggle('nav-open');
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        nav.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            header.classList.remove('nav-open');
+            toggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      });
+    });
+  </script>
+
+ 
