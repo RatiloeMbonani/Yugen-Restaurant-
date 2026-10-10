@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
  "scripts": {
-  "build:css": "npx @tailwindcss/cli -i src/style.css -o public/style.css --watch"
+  "build:css": "npx @tailwindcss/cli -i src/style.css -o public/style.css ",
+   "build": "npm run build:css"
 },
   "keywords": [],
   "author": "",
